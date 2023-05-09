@@ -19,51 +19,38 @@
     <main id="main">
     </main>
     <footer id="footer0">
-        <header>
-            <h1>Your order</h1>
-        </header>
-        <div id="footerdiv">
-            <!-- <section>
-                <div>
-                    <div class="big">Pizza</div>
-                    <div class="small">remove</div>
-                </div>
-                <div class="medium">
-                    $14
-                </div>
-            </section>
-            <section>
-                <div>
-                    <div class="big">Beer</div>
-                    <div class="small">remove</div>
-                </div>
-                <div class="medium">
-                    $12
-                </div>
-            </section> -->
+        <div class="last hide" id="last">
+            <h1>😊!Your order is on its way!</h1>
         </div>
-        <footer>
-            <div>
-                <section id="total">
-                    <div class="big">Total price:</div>
-                    <div style="font-size: 20px;" id="totalCost">$0</div>
-                </section>
-                <section id="button">Complete order</section>
+        <div class="first" id="first">
+            <header>
+                <h1>Your order</h1>
+            </header>
+            <div id="footerdiv">
             </div>
-        </footer>
+            <footer>
+                <div>
+                    <section id="total">
+                        <div class="big">Total price:</div>
+                        <div style="font-size: 20px;" id="totalCost">$0</div>
+                    </section>
+                    <section id="button">Complete order</section>
+                </div>
+            </footer>
+        </div>
     </footer>
-    <div class="dynamic hide">
+    <div class="dynamic hide" id="paymentBar">
         <header>
             <h2>Enter card details</h2>
         </header>
         <section>
-            <input type="text" name="" id="" placeholder="Enter you name">
-            <input type="text" name="" id="" placeholder="Enter card number">
-            <input type="text" name="" id="" placeholder="Enter cvv">
+            <form>
+                <input type="text" name="" id="" placeholder="Enter you name" required>
+                <input type="text" name="" id="" placeholder="Enter card number" required>
+                <input type="text" name="" id="" placeholder="Enter cvv" required>
+                <input type="submit" value="Pay" id="pay">
+            </form>
         </section>
-        <footer>
-            pay
-        </footer>
     </div>
 </body>
 <script type="module" src="index.js"></script>

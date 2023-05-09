@@ -4,6 +4,10 @@ let main = document.getElementById("main");
 let footer = document.getElementById("footerdiv")
 let money = document.getElementById("totalCost");
 let order = document.getElementById("button");
+let paymentBar = document.getElementById("paymentBar");
+let last = document.getElementById("last");
+let footer0 = document.getElementById("footer0");
+let first = document.getElementById("first");
 
 menuArray.forEach((item) => {
 
@@ -61,8 +65,15 @@ function calculateCost() {
 }
 
 order.addEventListener("click", () => {
-    alert("Your order is placed. Thank you for ordering from us.");
-    footer.innerHTML = "";
-    money.innerHTML = "$0";
+    paymentBar.classList.toggle("hide");
 });
 
+let form = document.querySelector("form");
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    paymentBar.classList.toggle("hide");
+    alert("Your payment is successful. Thank you for ordering from us.");
+    first.classList.toggle("hide");
+    last.classList.toggle("hide");
+    money.innerHTML = "$0";
+})
