@@ -1,3 +1,9 @@
+#### ⭐ star this repository if you like it
+
+<div align="center">
+  <img src="https://github.com/kanugurajesh/Food-Ordering-Website/assets/120458029/df88885d-c634-43cb-8bd4-2d1a6051bb76" alt="" width=150 height=150>
+</div>
+
 # Food Ordering Website
 
 ## Demo
